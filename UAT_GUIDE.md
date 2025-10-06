@@ -39,7 +39,7 @@ To test tier broadcasts (`/sendt1`, `/sendt2`, `/sendt3`):
 
 ### 1️⃣ PRIVATE CHAT TESTS (Direct message with bot)
 
-| Command Type | Command | Expected Result | ✓/✗ |
+| Command Type | Command | Expected Result | ✅/❌ |
 |-------------|---------|-----------------|-----|
 | **Help & Info** |
 | Start | `/start` | Welcome message with command list |  |
@@ -65,7 +65,7 @@ To test tier broadcasts (`/sendt1`, `/sendt2`, `/sendt3`):
 
 ### 2️⃣ GROUP CHAT TESTS (Inside your testing group)
 
-| Command Type | Command | Expected Result | ✓/✗ |
+| Command Type | Command | Expected Result | ✅/❌ |
 |-------------|---------|-----------------|-----|
 | **Register Group** |
 | Add (single word) | `/addgroup testgroup` | Group registered successfully |  |
@@ -84,7 +84,7 @@ To test tier broadcasts (`/sendt1`, `/sendt2`, `/sendt3`):
 
 ### 3️⃣ VALIDATION TESTS (Either chat)
 
-| Test Case | Command | Expected Result | ✓/✗ |
+| Test Case | Command | Expected Result | ✅/❌ |
 |-----------|---------|-----------------|-----|
 | Empty brackets | `/sendall <  >` | Error: empty message |  |
 | Unclosed bracket | `/addgroup <test` | Error: invalid format |  |
@@ -95,8 +95,8 @@ To test tier broadcasts (`/sendt1`, `/sendt2`, `/sendt3`):
 
 ## NOTES
 
-- **✓** = Test Passed (Green checkmark)
-- **✗** = Test Failed (Red X)
+- ✅ = Test Passed (Green checkmark)
+- ❌ = Test Failed (Red X)
 - All timestamps should be in GMT+7
 - Invalid commands should provide helpful error messages
 - Multi-word parameters require angle brackets `<like this>`
