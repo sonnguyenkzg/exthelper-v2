@@ -29,8 +29,8 @@ To test tier broadcasts (`/sendt1`, `/sendt2`, `/sendt3`):
 4. Example: Add `testgroup` in `Tier 1` column
 
 **For `/sendmisc` testing:**
-- Column D `Misc` - group tag
-- Column E `Message` - pre-configured message to send
+- Column G `Misc` - group tag
+- Column H `Message` - pre-configured message to send
 - Example: `testgroup` | `This is a misc message`
 
 ---
@@ -42,14 +42,14 @@ To test tier broadcasts (`/sendt1`, `/sendt2`, `/sendt3`):
 | Command Type | Command | Expected Result | ✅/❌ |
 |-------------|---------|-----------------|-----|
 | **Help & Info** |
-| Start | `/start` | Welcome message with command list |  |
+| Start | `/start` | Full command guide |  |
 | Help | `/help` | Full command guide |  |
 | Database | `/db` | Link to Google Sheets database |  |
 | **Broadcast Messages** |
 | Send All (valid) | `/sendall <Test message>` | Sent to all active groups + confirmation |  |
 | Send All (single word) | `/sendall hello` | Sent to all active groups + confirmation |  |
 | Send All (invalid) | `/sendall` | Error: missing message |  |
-| Send Group (valid) | `/sendgroup <yourgroup> <message>` | Sent to specific group + confirmation |  |
+| Send Group (valid) | `/sendgroup <group_tag> <message>` | Sent to specific group + confirmation |  |
 | Send Group (not found) | `/sendgroup <fake> <msg>` | Error: group not registered |  |
 | Send Group (invalid) | `/sendgroup` | Error: missing parameters |  |
 | Send Tier 1 | `/sendt1 <T1 test>` | Sent to T1 groups + summary *(requires Step 3)* |  |
