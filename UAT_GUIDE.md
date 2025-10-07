@@ -6,7 +6,7 @@
 1. Open Telegram
 2. Search for `@exthelper_v2_bot` (or the actual bot username)
 3. Start a conversation with the bot
-4. Send `/start` or `/help` to initiate the conversation
+4. Send `/start` or `/help` to show full command guide
 
 ### Step 2: Create Testing Group
 1. Create a new Telegram group
