@@ -24,8 +24,8 @@ To test tier broadcasts (`/sendt1`, `/sendt2`, `/sendt3`):
 2. Go to `MESSAGE_TIERS` sheet tab
 3. Add your test group tag in the appropriate column:
    - Column A `Tier 1` - for T1 groups
-   - Column B `Tier 2` - for T2 groups  
-   - Column C `Tier 3` - for T3 groups
+   - Column C `Tier 2` - for T2 groups  
+   - Column E `Tier 3` - for T3 groups
 4. Example: Add `testgroup` in `Tier 1` column
 
 **For `/sendmisc` testing:**
