@@ -26,7 +26,7 @@ ExtHelper v2 is a Telegram bot for broadcasting messages across multiple Telegra
 ### Step 1: Connect
 1. Open Telegram
 2. Search `@exthelper_v2_bot`
-3. Send `/start` or `/help`
+3. Send `/start` to begin
 
 ### Step 2: Register a Group
 1. Create or open your Telegram group
@@ -97,14 +97,15 @@ ExtHelper v2 is a Telegram bot for broadcasting messages across multiple Telegra
 - All image broadcasting (`/sendpict1/2/3`)
 - Listing commands (`/list`, `/listactive`, `/listinactive`)
 - Database access (`/db`)
+- Start command (`/start`)
 
 **Group Chat Commands** (send in group):
 - Registration (`/addgroup`)
 - Deactivation (`/stop`)
 - Status check (`/status`)
 
-**Both:**
-- Help (`/start`, `/help`)
+**Both Private and Group:**
+- Help command (`/help`)
 
 ---
 
@@ -134,8 +135,17 @@ Configuration: Google Sheets → `MESSAGE_TIERS` tab
 
 ### General Commands
 
-#### `/start` or `/help`
-Shows full command guide.
+#### `/start`
+Shows full command guide (same as `/help`).
+
+**Where:** Private chat only
+
+**Output:** Complete command guide
+
+---
+
+#### `/help`
+Shows command guide.
 
 **Where:** Any (private or group)
 
@@ -662,7 +672,8 @@ Fix: Close with >
 | Command | Where | What It Does |
 |---------|-------|--------------|
 | **Information** | | |
-| `/start`, `/help` | Any | Show guide |
+| `/start` | Private | Show guide |
+| `/help` | Any | Show guide |
 | `/db` | Private | Database link |
 | **Group Setup** | | |
 | `/addgroup <n>` | Group | Register group |
